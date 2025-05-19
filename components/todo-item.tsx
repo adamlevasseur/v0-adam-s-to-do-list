@@ -17,7 +17,7 @@ interface TodoItemProps {
 export default function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
   return (
     <li>
-      <Card className="hover:shadow-md transition-shadow">
+      <Card className="hover:shadow-md transition-shadow dark:border-gray-700">
         <CardContent className="p-4 flex items-center justify-between">
           <div className="flex items-center gap-3 flex-1">
             <Checkbox id={`todo-${todo.id}`} checked={todo.completed} onCheckedChange={() => onToggle(todo.id)} />
